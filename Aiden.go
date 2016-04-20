@@ -61,8 +61,7 @@ func main() {
         fmt.Println("Logged in as " + prefix.Username)
     }
 
-    fmt.Println("Welcome to Aiden! Press any key to quit.")
-    // Simple way to keep program running until any key press.
+    fmt.Println("Welcome to Aiden! Press enter to quit.")
     var input string
     fmt.Scanln(&input)
     return
@@ -122,7 +121,7 @@ func printUsage(s *discordgo.Session, m *discordgo.MessageCreate) (msg *discordg
     "help --> Responds with this message.\n" +
     "add [num1] [num2] --> Adds two whole numbers.\n" +
     "prime [num] --> States if the number is prime or not.\n" +
-    "pal [num] --> States if the input is a palindrome or not.\n" +
+    "pal [input] --> States if the input is a palindrome or not.\n" +
     "choose [comma list] --> Chooses a value from a list.\n" +
     "answer [question] --> Answers a yes or no question.\n" +
     "[question]? --> Answers a yes or no question.\n" +
